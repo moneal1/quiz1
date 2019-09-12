@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 // Place all the styles related to the quiz controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -10,4 +12,13 @@ h1 {
 
 h2 {
     color: #15B004;
+}
+
+html {
+    background: image_url('stars.png') no-repeat;
+    height: 100%;
+}
+
+h4 {
+    color: black;
 }
