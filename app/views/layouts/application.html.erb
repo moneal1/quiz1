@@ -8,14 +8,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  
   <body>
     <header class="row">
       <div class="col-3">
-        Images
+          <h1>click the button to see a picture</h1>
+          <%= simple_form_for @quote do |f| %>
+          <%= f.input :picture %>
+          <%= f.submit 'Create' %>
+      <% end %>
       </div>
       <div class="col-4">
-        Not sure what I want to show up when the button is pushed.
+        
       </div>
     </header>
     <br class="clear" />

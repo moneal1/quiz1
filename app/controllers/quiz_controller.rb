@@ -1,9 +1,12 @@
 class QuizController < ApplicationController
-    def def index
-        
-    end
+    
+    def new
+        @picture = Picture.new
+       end
 
-    def simple_form_for
-        @simple_form= action
+       def index
+        @picture = Picture.order("RANDOM()").first 
+     end
+        
+       
     end
-end
